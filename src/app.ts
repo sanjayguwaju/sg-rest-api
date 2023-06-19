@@ -8,12 +8,10 @@ dotenv.config();
 
 
 const port = config.get<number>("port");
-
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
 
 
 app.listen(port, async () => {
